@@ -69,7 +69,3 @@ app.use(limiter)
 
 app.use(ErrorMiddleware);
 
-
-//zA0dKDDqgrBFEQEV
-//uAxkYc5Kz3C0aUXy 
-//shahzad@1234
