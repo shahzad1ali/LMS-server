@@ -2,21 +2,18 @@
   "name": "lms",
   "version": "1.0.0",
   "type": "commonjs",
-  "main": "build/server.js",
+  "main": "build/server.ts",
   "engines": {
     "node": "22.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "start": "node build/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false ",
     "build": "tsc && npm run copy-assets",
-    "copy-assets": "copyfiles -u 0 \"mails/**/*\" build"
+    "copy-assets": "copyfiles -u 0 \"mails/**/*\" build",
+    "start": "node build/server.ts"
   },
   "author": "Shahzad Ali",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/cookie-parser": "^1.4.9",
