@@ -6,11 +6,11 @@
   "engines": {
     "node": "22.x"
   },
- "scripts": {
+"scripts": {
   "dev": "ts-node-dev --respawn --transpile-only server.ts",
   "build": "tsc && npm run copy-assets",
   "copy-assets": "copyfiles -u 0 \"mails/**/*\" build",
-  "start": "npm run build && node build/server.js"
+  "start": "node build/server.js"
 },
   "author": "Shahzad Ali",
   "license": "ISC",
