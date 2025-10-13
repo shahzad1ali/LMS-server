@@ -2,7 +2,7 @@ import Redis from "ioredis";
 import dotenv from "dotenv";
 dotenv.config();
 
-const redisUrl = process.env.REDIS_URL || "rediss://default:ATNpAAIncDIwNzA2ZGIyMGY2MTE0MjVhYTMyNWM4ZDJjYTRkYTI4YXAyMTMxNjE@actual-kitten-13161.upstash.io:6379";
+const redisUrl = "rediss://default:ATNpAAIncDIwNzA2ZGIyMGY2MTE0MjVhYTMyNWM4ZDJjYTRkYTI4YXAyMTMxNjE@actual-kitten-13161.upstash.io:6379";
 console.log("🚀 ~ redisUrl:", redisUrl)
 
 if (!redisUrl) {
